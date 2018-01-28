@@ -3,6 +3,9 @@ import { Observable } from 'rxjs/Observable';
 import { PaintInfo } from './../model/PaintInfo';
 import { Injectable } from '@angular/core';
 import { IGobandService } from '../interface/IGobandService';
+/**
+ * 五子棋的比對判斷方向
+ */
 enum Directions {
   POSITIVE_HORIZONTAL = 1,
   NEGATIVE_HORIZONTAL = 2,
@@ -142,7 +145,7 @@ export class GobangInfoService implements IGobandService {
     return isWin;
   }
   /**
-   *
+   * 計算棋般作標系統
    * @param gridCount
    * @param chessSize
    */

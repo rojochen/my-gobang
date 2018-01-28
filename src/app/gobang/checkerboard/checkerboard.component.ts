@@ -75,7 +75,7 @@ export class CheckerboardComponent implements OnInit, AfterViewInit, OnDestroy {
     pointInfo.type = this.currentType;
   }
   /**
-   * 1.繪制棋盤
+   * 1.繪製棋盤
    * 2.註刪canvas的事件
    */
   ngAfterViewInit(): void {
@@ -112,7 +112,7 @@ export class CheckerboardComponent implements OnInit, AfterViewInit, OnDestroy {
    * 清除所有資料
    * 1.棋盤畫布
    * 2.棋盤資料
-   * 3.所有下棋的歷程資訊
+   * 3.所有落棋的歷程資訊
    */
   clear() {
     this.context.clearRect(0, 0, this.myCanvas.nativeElement.width, this.myCanvas.nativeElement.height);
