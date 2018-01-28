@@ -3,14 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-
-
-@NgModule({
+import { GobangModule } from './gobang/gobang.module'; 
+ @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, GobangModule
   ],
   providers: [],
   bootstrap: [AppComponent]

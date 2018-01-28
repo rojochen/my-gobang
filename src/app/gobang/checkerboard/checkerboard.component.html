@@ -1,0 +1,10 @@
+<h1 >{{currentType ===0 ? "黑棋" : "白棋"}}</h1>
+<p>
+  <canvas #myCanvas [width]="paintSize.width" [height]="paintSize.height"  style="background:lightgray;margin:40px;"></canvas>
+</p>
+<ng-container *ngIf="showResult">
+  <div class="full_page" >
+    <h2 class="title">比賽結束,{{currentType ===0 ? "白棋" : "黑棋"}}勝利</h2>
+    <span class="content" style="width:100%" (click)="clear()" >重新開始</span>
+  </div>
+</ng-container>

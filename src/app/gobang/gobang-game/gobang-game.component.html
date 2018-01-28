@@ -1,0 +1,7 @@
+<div>
+  <button class="btn" type="button" (click)="rerender(checkerboard)" >重新開始</button>
+
+</div>
+<div>
+   <app-checkerboard #checkerboard [gridCount]="20"  cellSize="40" ></app-checkerboard>
+</div>

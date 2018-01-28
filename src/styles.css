@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+
+.full_page {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  z-index: 100000000;
+  min-width: 720px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+}
+
+.full_page .title {
+  font-size: 64px;
+}
+
+.full_page .content {
+  font-size: 32px;
+  border: #fff 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+.full_page .content:hover {
+  font-size: 32px;
+  color: #fffccc;
+  border: #fffccc 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btn {
+  padding: .65em 1.25em;
+  font-size: inherit;
+  color: #20515b;
+  background: transparent;
+  border-color: #20515b;
+  border-radius: .25em;
+}
+.btn:hover, .btn:active{
+    color: #fff;
+    background-color: #20515b;
+    border-color: #20515b;
+
+}
